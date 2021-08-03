@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博主信息页</title>
+</head>
+<body>
+
+<form action="" th:each="blogger:${blogger}">
+  用户编号：<input name="id" th:value="${blogger.id}"><br>
+  用户姓名：<input type="text" name="username" th:value="${blogger.name}"><br>
+  用户密码：<input type="password" name="pwd" th:value="${blogger.pwd}">
+</form>
+</body>
+</html>
